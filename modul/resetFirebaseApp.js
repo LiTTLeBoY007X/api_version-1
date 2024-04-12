@@ -1,7 +1,6 @@
 // resetFirebaseApp.js
 const admin = require('firebase-admin');
-require('dotenv').config();
-const serviceAccount = process.env.SERVICE_ACCOUNT_KEY_PATH;
+const serviceAccount = require('../serviceAccountKey.json')
 
 const resetFirebaseApp = () => {
   // ลบแอป Firebase ที่มีชื่อเรียกว่า 'adminApp' หากมีอยู่

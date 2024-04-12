@@ -1,6 +1,5 @@
 const admin = require('firebase-admin');
-require('dotenv').config();
-const serviceAccount = process.env.SERVICE_ACCOUNT_KEY_PATH;
+const serviceAccount = require('../serviceAccountKey.json')
 
 let initialized = false;
 
